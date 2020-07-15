@@ -1,8 +1,8 @@
 const ArticlesService = {
   getAllArticles(knex) {
-    // return 'all the articles!!';
-    // return Promise.resolve('all the articles!!')
-    return knex.select('*').from('blogful_articles');
+    console.log('running knex.select=', knex.select);
+    return knex
+      .select('*').from('blogful_articles');
   }
 };
 
